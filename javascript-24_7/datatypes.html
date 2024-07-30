@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+<body>
+    <!-- data types are two types
+     1.primitive data types
+           1.number
+           2.string
+           3.boolean
+           4.null
+           5.undefined
+            6.begint
+            7.symbol
+     2.Non-primitive data types
+            1.array----- it should be in [] and it allows multiple strings with multiple data types.it has index and its starts from 0.
+            2.object--------- it should be in {key:values}. for pointing the values we use key.
+            3.array of object-----it contains the objects and arrays syntax is [{}] .
+            -->
+            <script>
+                // number
+                var x=25;
+                document.write(typeof x+"<br>");
+                console.log(x);
+                // string
+                let name="lokesh";
+                document.write(typeof name+"<br>");
+                console.log(name);
+                // boolean
+                const t=true;
+                document.write(t +"<br>");
+                console.log(typeof t);
+                // undefined
+                let y;
+                x=25;
+                console.log(y);
+                console.log(x);
+                // null
+                let z=null;
+                console.log(typeof z);
+                // begint
+                let phone=BigInt(1234567890987665443221);
+                console.log(phone);
+                console.log(typeof phone);
+                // symbol
+                var sy='@#$%^&&';
+                console.log(sy);
+
+
+
+                // array
+                var arr=["string","lok","abc",123,"cvb",null];
+                document.write(arr);
+                console.log(arr);
+                console.log(arr[2]);
+                // object
+                let obj={
+                    name:'lokesh',
+                    age:21,
+                    num:476,
+                    DOB:{
+                        AUGUST:29,
+                    },
+                    add:'guntur',
+
+                };
+                console.log(obj);
+                console.log(obj.name);
+                console.log(obj.DOB.AUGUST);
+                // array of object
+                let persons=[
+                    p1={
+                        abc:'lok',
+                        def:'esh',
+                        num:476,
+                    },
+                    p2={
+                        name:'shiva',
+                        car:{
+                            name:'lamborgani',
+                        },
+                        dog:{
+                            name:'snoopy',
+                        }
+                    }
+                ];
+                console.log(persons[1].name);
+                console.log(persons[1].car.name);
+
+            </script>
+</body> 
+</html>
