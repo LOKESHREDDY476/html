@@ -1,0 +1,4 @@
+6500-wallet balance
+15968-1500=14450 central balance
+20000-14450=5550 clg fee need to add
+7000-5550=1450-akka

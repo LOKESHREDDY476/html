@@ -1,0 +1,38 @@
+
+  form{
+    background-color: blue;
+  }
+h1,article,aside{
+  font-size: 20px;
+  background-color:white;
+color: red;
+text-align: center;
+}
+header{
+  background-color:black;
+}
+.rel{
+  position: relative;
+  top: 20px;right: 0px;
+}
+nav{
+  background-color: chartreuse;
+}
+p{
+background-color:white;
+}
+.form>label:nth-of-type(4){
+  color:red;
+}
+.form>label:nth-of-type(8){
+  color:red;
+}
+audio,video{
+  background-color:darkkhaki;
+}
+
+
+
+
+
+

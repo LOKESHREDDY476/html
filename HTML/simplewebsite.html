@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: black;
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+  }
+  nav ul li a:hover {
+    background-color: red;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: red;
+  }
+  .content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  .content p {
+    margin: 0;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: chartreuse;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .flex-container div {
+    background-color: white;
+    padding: 10px;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+  }
+  .form {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  .form input,
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .form input[type="submit"],
+  .form input[type="reset"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .form input[type="submit"]:hover,
+  .form input[type="reset"]:hover {
+    background-color: red;
+  }
+  audio,
+  video {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-align: justify;
+  }
+  footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .footer-container div {
+    flex: 1;
+    margin: 10px;
+    text-decoration: none;
+  }
+  footer h4 {
+    margin-top: 0;
+  }
+  footer a {
+    color: red;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #15f384;
+    text-decoration: underline;
+  }
+  footer i {
+    color: #15f384;
+    margin-right: 5px;
+  }
+</style>
+</head> 
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">My account</a></li>
+        <li><a href="#">Wish list</a></li>
+        <li><a href="#">Shopping</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Close</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <img src="./Exam1/images/AIT.png" alt="AIT" width="150" style="display: block; margin: 20px auto;" />
+    <h1>WELCOME TO MY WEBSITE</h1>
+    <section>
+      <div class="content">
+        <p><b>Name:</b> Marri Lokesh Reddy</p>
+        <p><b>Contact:</b> 9392420476</p>
+      </div>
+      <h2>Text Tags</h2>
+      <div class="flex-container">
+        <div>Lokesh</div>
+        <div>Shiva</div>
+        <div>Rajesh</div>
+        <div>Hari</div>
+        <div>GST</div>
+        <div>Madhav</div>
+      </div>
+      <h3>Multimedia</h3>
+      <audio controls>
+        <source src="./Exam1/media/sampleaudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls>
+        <source src="./Exam1/media/samplevideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h4>Forms</h4>
+      <div class="form">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="username" required minlength="1" maxlength="10">
+          <label for="ph">Phone Number:</label>
+          <input type="tel" id="ph" name="phone_number" minlength="1" maxlength="13">
+          <label for="em">Email:</label>
+          <input type="email" id="em" name="email" required minlength="1" maxlength="20">
+          <label class="gender"><b>Gender:</b></label>
+          <input type="radio" name="gender" id="male" value="male" class="radio-btn">
+          <label for="male" class="radio-label">Male</label>
+          <input type="radio" name="gender" id="female" value="female" class="radio-btn">
+          <label for="female" class="radio-label">Female</label> 
+          <input type="radio" name="gender" id="others" value="others" class="radio-btn">
+          <label for="others" class="radio-label">Others</label>
+          <label class="skills"><b>Skills:</b></label>
+          <input type="checkbox" name="skills" id="html" value="HTML" class="checkbox-btn">
+          <label for="html" class="checkbox-label">HTML</label>
+          <input type="checkbox" name="skills" id="java" value="JAVA" class="checkbox-btn">
+          <label for="java" class="checkbox-label">JAVA</label>
+          <input type="checkbox" name="skills" id="js" value="JAVASCRIPT" class="checkbox-btn">
+          <label for="js" class="checkbox-label">JAVASCRIPT</label>
+          <input type="checkbox" name="skills" id="py" value="Python" class="checkbox-btn">
+          <label for="py" class="checkbox-label">Python</label>
+          <input type="checkbox" name="skills" id="rjs" value="Reactjs" class="checkbox-btn">
+          <label for="rjs" class="checkbox-label">Reactjs</label>
+          <input type="checkbox" name="skills" id="njs" value="Nodejs" class="checkbox-btn">
+          <label for="njs" class="checkbox-label">Nodejs</label>
+          <label for="pan">PAN Card Number:</label>
+          <input type="text" id="pan" name="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+          <label for="cou">Select your Country:</label>
+          <select name="country" id="cou">
+            <option value="">----Select----</option>
+            <option value="in">India</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="aus">Australia</option>
+          </select>
+          <label for="q">Numbers (between 1 and 5):</label>
+          <input type="number" id="q" name="numbers" min="1" max="5">
+          <label for="volume">Volume (0-100):</label>
+          <input type="range" id="volume" name="volume" min="0" max="100" step="10">
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="query" placeholder="Enter your search term" required>
+          <input type="reset" value="Reset to defaults">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="first">
+        <img src="./Exam1/images/AIT.png" alt="AIT" width="150" />
+        <p>AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidates who can develop their skills and build their career opportunities across multiple Companies.</p>
+      </div>
+      <div class="second">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Placements</a></li>
+          <li><a href="#">Co-operate training</a></li>
+        </ul>
+      </div>
+      <div class="three">
+        <h4>Trending courses</h4>
+        <ul>
+          <li><a href="#">UI Development Course</a></li>
+          <li><a href="#">Angular JS Course</a></li>
+          <li><a href="#">React JS Course</a></li>
+          <li><a href="#">Digital Marketing Course</a></li>
+          <li><a href="#">Python Course</a></li>
+        </ul>
+      </div>
+      <div class="four">
+        <h4>Contact info</h4>
+        <p><i class="fa-solid fa-address-card" style="font-size:24px;"></i> #63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 560029</p>
+        <p><i class="fa-solid fa-phone-volume"></i> India : +91 8431-040-457</p>
+        <p><i class="fa-solid fa-envelope"></i> info@achieversit.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

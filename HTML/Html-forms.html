@@ -1,0 +1,166 @@
+<!Doctype html>
+<html>
+<head>
+<title>FORMS</title>
+<style>
+  
+  form{
+    background-color: blue;
+  }
+h1,article,aside{
+  font-size: 20px;
+  background-color:white;
+  color: red;
+  text-align: center;
+}
+header{
+  background-color:chartreuse;
+}
+
+li{
+  display: inline;
+
+}
+nav{
+ 
+   display: block; 
+  position: relative;
+  right: 10px;
+  left: 80%;
+  bottom: 120px;
+}
+
+.ul:hover {
+  
+  color:red;
+}
+
+ul{
+  
+  position: absolute;
+  color: red !important;
+}
+
+p{
+background-color:white;
+}
+.form>label:nth-of-type(4){
+  color:red;
+}
+
+.form>label:nth-of-type(8){
+  color:red;
+}
+audio,video{
+
+  background-color:darkkhaki;
+}
+</style>
+</head>
+<body>
+  <header>
+    <section>
+      <img src="./Exam1/images/AIT.png" alt="AIT"/> <h1>WELCOME TO MY WEBSITE</h1>
+          <nav>
+            <ul>
+            <li>
+                <a href="file:///C:/Users/HP/AppData/Local/Microsoft/Windows/INetCache/IE/6653IKBV/LOKESH_UPDATED_RESUME[2].pdf"><b>Resume</b></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/lokesh-reddy-marri-85002620b"><b>Linkedin</b></a>
+              </li>
+              <li> 
+                <a href="https://www.naukri.com/minis?articleIds=-928130427&utm_source=naukri&utm_medium=push&utm_campaign=active_journey_passive&uid=264652376&navBarVisibility=false"><b>naukri</b></a>
+              </li> 
+            </ul>
+          </nav>
+
+      
+      <p><b>NAME:</b>MARRI LOKESH REDDY</p>
+      <p><b>Contact:</b>9392420476</p> 
+    
+             
+         
+    </section>
+  </header>
+<h2>Text tags</h2>
+<p>
+	<article>These are content types of html</article>
+	<aside>Content should be in aside</aside>
+</P>
+<h3>Multi Media</h3>
+<audio controls>
+<Source src="./Exam1/media/sampleaudio.mp3" type="audio/mp3" />
+</audio>
+<video controls>
+
+<Source src="./Exam1/media/samplevideo.mp4" type="video/mp4" />
+</video><br>
+<h4>Forms</h4>
+<form class="form">
+<label for="name">Name:</label>
+<input  type="text" id="name" name="username" required/ minlength="1" maxlength="10"><br>
+<label for="ph">Phone Number:</label>
+<input type="tel" id="ph" name="Phone Number" minlength="1" maxlength="13"/><br>
+<label for="em">Email:</label>
+<input  type="email" id="em" name="email" required/ minlength="1" maxlength="20"><br>
+<label><strong>Gender</strong></label><br>
+<input type="radio" name="gender" id="male" value="male"/>
+<label for="male" >Male</label>
+<input type="radio" name="gender" id="female" value="female"/>
+<label for="female" >Female</label>
+<input type="radio" name="gender" id="others" value="others"/>
+<label for="others" >Others</label><br>
+<input type="hidden" name="pan" value="png123456hg"/>
+<input type="file" name="file"/><br>
+<label><strong>checkbox</strong></label><br>
+<input type="checkbox" name="Skills" id="html" value="HTML"/>
+<label for="html" >HTML</label><br>
+<input type="checkbox" name="SkillS" id="java" value="JAVA"/>
+<label for="java" >JAVA</label><br>
+<input type="checkbox" name="Skills" id="js" value="JAVASCRIPT"/>
+<label for="js" >JAVASCRIPT</label><br>
+<input type="checkbox" name="Skills" id="py" value="Python"/>
+<label for="py" >Python</label><br>
+<input type="checkbox" name="Skills" id="RJS" value="Reactjs"/>
+<label for="RJS" >Reactjs</label><br>
+<input type="checkbox" name="Skills" id="NJS" value="Nodejs"/>
+<label for="NJS" >Nodejs</label><br>
+<input type="password" name="pass" placeholder="plz enter password"/><br>
+<label for="COU"><b>Select your Country:</b></label>
+<select name="Country" id="COU" >
+<option >----Select---</option>
+<option value="In">India</option>
+<option value="us">United States</option>
+<option value="uk">United Kingdom</option>
+<option value="aus">Australia</option>
+<select><br>
+ <label for="q">numbers (between 1 and 5):</label>
+  <input type="number" id="q" name="numbers" min="1" max="5"><br><br>
+
+<label >Contact</label>
+<input type="tel" name="mobile" id="mobile" minlength="1" maxlength="12"  /><br>
+
+<label for="pan">PAN Card Number:</label>
+<input type="text" id="pan" name="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"  required/>
+
+<!--comment for HTML 5 form tags. they are
+1.email-2.url--3.date 4.time-5.month-6.color-7.number-8.tel-9.range-10.search-->
+<!--it has anthother tag for multiple lines of text in textbox is textarea box--it consists of two attributes 1.row-2.cols-->
+
+ <label for="volume">Volume (0-100):</label>
+  <input type="range" id="volume" name="volume" min="0" max="100" step="10"/>
+  <output id="volumeOutput"></output>
+  
+<input type="search" id="search" name="query" placeholder="Enter your search term" required/>
+<input type="reset" name="reset" value="reset to defaults"/><br>
+<input type="submit" name="submit"/><br>
+</form>
+</body>
+</html>
+TRENDING COURSES
+UI Development Course
+Angular JS Course
+React JS Course
+Digital Marketing Course
+Python Course
