@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Example</title>
+</head>
+
+<body>
+    <select id="Date"></select>
+    <select id="Month"></select>
+    <select id="year"></select>
+    <select id="courses"></select>
+    <select id="durations"></select>
+    <select id="Address"></select>
+    <script>
+        // Break Example
+        for (let k = 0; k <= 50; k++) {
+            document.write(k + '<br>');
+            if (k >= 25) {
+                break;
+            }
+        }
+
+        // Date Dropdown
+        let dateOptions = '<option>---Date---</option>';
+        for (let i = 1; i <= 31; i++) {
+            dateOptions += '<option>' + i + '</option>';
+        }
+        document.getElementById('Date').innerHTML = dateOptions;
+
+        // Month Dropdown
+        let monthOptions = '<option>---Month---</option>';
+        let mnth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        for (let i = 0; i < 12; i++) {
+            monthOptions += '<option>' + mnth[i] + '</option>';
+        }
+        document.getElementById('Month').innerHTML = monthOptions;
+
+        // Year Dropdown
+        let yearOptions = '<option>---Year---</option>';
+        for (let i = 2024; i >= 1905; i--) {
+            yearOptions += '<option>' + i + '</option>';
+        }
+        document.getElementById('year').innerHTML = yearOptions;
+
+        // Courses Dropdown
+        let courses = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'JAVA', 'ADVANCED JAVA', 'SQL', 'PYTHON', 'AWS', 'CLOUD'];
+        let courseOptions = '<option>---Courses---</option>';
+        for (let i = 0; i < courses.length; i++) {
+            courseOptions += '<option>' + courses[i] + '</option>';
+        }
+        document.getElementById('courses').innerHTML = courseOptions;
+
+        // Durations Dropdown
+        let durations = ['1month', '2months', '3months', '4months', '5months', '6months', '7months', '8months', '9months', '10months'];
+        let durationOptions = '<option>---Durations---</option>';
+        for (let j = 0; j < durations.length; j++) {
+            durationOptions += '<option>' + durations[j] + '</option>';
+        }
+        document.getElementById('durations').innerHTML = durationOptions;
+
+        // Address Dropdown
+        let places = ['GUNTUR', 'VIJAYAWADA', 'TIRUPATI', 'NELLORE', 'CHITTOR', 'KADAPA', 'PIDUGURALA', 'SATTENAPALLI', 'PALNADU', 'RAYALASEEMA'];
+        let addressOptions = '<option>---Location---</option>';
+        for (let j = 0; j < places.length; j++) {
+            addressOptions += '<option>' + places[j] + '</option>';
+        }
+        document.getElementById('Address').innerHTML = addressOptions;
+
+        // Fibonacci Sequence
+        let a = 0;
+        let b = 1;
+        let c = 1;
+        document.write(a + '<br>');
+        document.write(b + '<br>');
+        for (let i = 0; i < 10; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+            document.write(c + '<br>');
+        }
+    </script>
+</body>
+
+</html>

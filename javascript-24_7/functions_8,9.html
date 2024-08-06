@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!-- FUNCTIONS
+    DEF:  
+    SYNTAX:
+            function fun-name(parameter1,parameter2){
+            //statements;
+            }
+            calling:fun-name(parameter1,parameter2);
+    types:
+    1.functions without parameters
+    2.functions with parameters
+    3.functions with return statement
+    4.functions with default statements
+    5.named functions
+    6.anonymous functions
+    7.nested functions
+    8.call back functions
+    9.recursive functions
+    10.variable functions
+    11.IIFE(Immediately invoked function expressions)
+    12.Arrow Functions
+        syntax:()=>{}
+
+     -->
+    <script>
+        //example function without parameters
+        function lokesh(){
+            let x=45;
+            let y=67;
+            console.log(x+y);
+            
+        }
+        lokesh();//112
+        //example function with parameters
+        function hit(a,b){
+            console.log(a+b);
+        }
+        hit(2,3);//5
+        //examples  function with return statement
+        function myfun(a,b){
+       
+        return a+b;
+            
+        }
+        myfun(3,4);
+        let x=myfun(10,20);
+        document.write(x);//30
+//example
+function add(a, b) {
+    
+    return a+b;
+}
+add(1,2);
+let result = add(30, 40);
+console.log(result); // Output: 70
+//gst problem 
+function gstcalc(p,gp){
+    document.write((p*gp)/100);
+}
+gstcalc(2300,23);
+// functions with default parameters
+function greet(name='Hello'){
+    console.log(name);
+    
+}
+greet();
+//nested functions
+function outer(){
+    console.log("It is a outer");
+    function inner(){
+        console.log('It is a inner');
+       
+    }
+    inner();
+}
+outer();
+//anonymous function
+//variable function
+let h=function (a,b){
+    console.log(a+b);    
+}
+h(23,56);
+//call back functions
+function greet(name) {
+    console.log('Hello ' + name);
+}
+
+function sayGoodbye() {
+    console.log('Goodbye!');
+}
+
+sayGoodbye('Alice', greet);
+
+
+
+
+//recursive function
+function fact(num) {
+    if (num == 0) {
+        return 1;
+    } else {
+        return( num * fact(num - 1));
+    }
+}
+
+console.log(fact(5));
+//IIFE
+(function (name){
+    console.log(name);
+    
+})
+('Lokesh')
+//arrow functions
+let y=(num=45)=>{console.log(num)};
+y(55);
+
+</script>
+    
+</body>
+</html>

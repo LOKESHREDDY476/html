@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statements</title>
+</head>
+<body>
+    <!-- control statements
+     1.conditional statements
+            1.simple if
+            syntax:
+                    if(condition){//if the statement is true then it will wxecute.
+                    statements;
+                    }
+
+            2.if else
+            syntax:
+                    if(condition){
+                    statements//if the condition is true then these statements will execute.
+                    }
+                    else{
+                    statements//otherwise the else block statements will execute.
+                    }
+            3.else if ladder
+            syntax:
+                    if(condition1){
+                    statements;
+                    }
+                    else if(condition2){
+                    statements;
+                    }
+                    else if(condition3){
+                    statements;
+                    }
+                    else {
+                    statements;
+                    }
+
+            4.nested if
+            syntax:
+                    if(condition1){
+                        if(condition2){
+                        statements;
+                        }
+                        else{
+                        statements;
+                        }
+                    }
+                    else{
+                    statements;
+                    }
+            5. switch case
+            syntax:
+                switch(expression){
+                case 1:
+                    //statements;
+                    break;
+                case 2:
+                    //statements;
+                    break;
+                default:
+                    //statements;  
+                    }
+     2.loops/iterative statements (loops will be in nxt page)-->
+    <script>
+//simple if
+
+        let x=45;
+        if(x<100){
+            document.write('x is the lessthan 100<br>');
+        }
+//examples
+     //Write a simple if statement to check if a variable age is greater than 18 and print "You are an adult."
+     let age=18;
+     if (age>18){
+        document.write('You are an adult<br>');
+     }
+     //Write an if statement to check if a number num is positive.
+     let num=23;
+     if(num>0){
+        document.write('num is positive <br>');
+     }
+//if else
+        let y=55;
+        if(x>y){
+            document.write('x is the lessthan y<br>'); 
+        }
+        else{
+            document.write('x is greater than y<br>');
+        }
+    //examples
+       // Write an if-else statement to check if a variable score is passing (greater than or equal to 50). Print "Pass" if it is, otherwise print "Fail."
+       let score=5;
+       if(score>=50){
+        document.write('pass<br>');
+       }
+       else{
+        document.write('fail<br>');
+       }
+       //Write an if-else statement to determine if a number num is even or odd.
+       let number=45;
+       if(number%2==0){
+        document.write('number is even<br>');
+       }
+       else{
+        document.write('number is odd<br>');
+       }
+       //Determining if a Year is a Leap Year
+       let year = prompt("Enter a year:"); 
+        
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        document.write(year + " is a leap year.<br>");
+        } else {
+        document.write(year + " is not a leap year.<br>");
+        }
+
+//else if
+        let z=70;
+         if(x>y){
+            document.write("true<br>");
+         }
+         else if(x==z){
+            document.write("false<br>");
+         }
+         else{
+            document.write('nothing<br>');
+         }
+    //examples
+         //Write an else if ladder to categorize a person's age group (child, teenager, adult, senior) based on their age.
+         let personage=24;
+         if(personage <= 12){
+            document.write('child<br>');
+         }
+         else if(personage >= 13 && personage <= 19){
+            document.write('teenager<br>');
+         }
+         else if(personage >= 20 && personage <= 30){
+            document.write('adult<br>');
+         }  
+         else{
+            document.write('senior<br>');
+         }
+         // Write an else if ladder to determine the grade based on a score (A for 90-100, B for 80-89, C for 70-79, D for 60-69, F for below 60).
+         let marks=78;
+         if(marks>=90 && marks<=100){
+            document.write('Grade A <br>');
+         }
+         else if(marks>=80 && marks<=89){
+            document.write('Grade B<br>');
+         }
+         else if(marks>=70 && marks<=79){
+            document.write('Grade C<br>');
+         }
+         else if(marks>=60 && marks<=69){
+            document.write('Grade D<br>');
+         }
+         else{
+            document.write('Grade F<br>')
+         }
+//nestedif
+         let v=34;
+         if(x<y>z){
+            if(x<y>z>v){
+                document.write('true<br>');
+            } 
+            else{
+                document.write('false<br>');
+ 
+            } 
+         }
+         else{
+            document.write('nothing<br>');
+         }
+    //examples
+         //Write a nested if statement to check if a person is eligible to vote (age >= 18) and also check if they have registered (isRegistered is true).
+         let xage=25;
+         let isRegistered=true;
+            if(xage>=18){
+                if(isRegistered){
+                    document.write('eligible to vote<br>');
+                }
+                else{
+                    document.write('not registered for vote<br>');
+                }
+            }
+            else{
+                document.write('Not eligible for vote<br>');
+            }
+           
+         //Write a nested if statement to determine the size of a t-shirt based on chestSize and height.
+        let chestSize =prompt('enter your chestSize');
+        let height = prompt('Enter your height');
+        if (chestSize > 40) {
+            if (height > 180) {
+                document.write("Size: XL<br>");
+            } else {
+                document.write("Size: L<br>");
+            }
+        } else {
+            if (height > 180) {
+                document.write("Size: L<br>");
+            } else {
+               document.write("Size: M<br>");
+            }
+        }
+    
+//switch
+let data=prompt("Enter the data");
+switch(data){
+    case 'a':
+        document.write('A<br>');
+        break;
+    case 'b':
+        document.write('B<br>');
+        break;
+    default:
+        document.write('please give valid input<br>');
+
+}
+//example
+//write a switch statement for printing the months by using numbers.
+let numb=prompt('Enter any number up 0 to 12')
+let month;
+switch(numb){
+    case 1:
+        month='january';
+        break;
+    case '2':
+        document.write('Febrauary');
+        break;
+    case '3':
+        document.write('March');
+        break;
+    case '4':
+        document.write('April');
+        break;
+    case '5':
+        document.write('May');
+        break;
+    case '6':
+        document.write('June');
+        break;
+    case '7':
+        document.write('July');
+        break;
+    case '8':
+        document.write('August');
+        break;
+    case '9':
+        document.write('September');
+        break;
+    case '10':
+        document.write('October');
+        break;
+    case '11':
+        document.write('Novemebr');
+        break;
+    case '12':
+        document.write('December');
+        break;
+    default:
+        document.write('please enter the valid number');
+}
+
+    </script>
+    
+</body>
+</html> 
